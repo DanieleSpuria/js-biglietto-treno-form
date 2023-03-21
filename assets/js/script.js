@@ -39,6 +39,7 @@ reset.addEventListener('click', function() {
   name.innerHTML = '';
   km.innerHTML = 0;
   age.innerHTML = 'default';
+  document.getElementById('biglietto').classList.remove('d-block');
 })
 
 
