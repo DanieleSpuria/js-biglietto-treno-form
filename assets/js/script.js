@@ -5,10 +5,10 @@ const genera = document.getElementById('bottone1');
 const reset = document.getElementById('bottone2');
 console.log(name, km, age, genera, reset);
 
-
 const prezzoKm = 0.21;
 let standard = prezzoKm * km;
 
+// Button1
 genera.addEventListener('click', function() {
   
   let totale = standard;
@@ -33,6 +33,7 @@ genera.addEventListener('click', function() {
   document.getElementById('costo').innerHTML = totale.toFixed(2) + '&euro;';
 });
 
+// Button2
 reset.addEventListener('click', function() {
 
   name.innerHTML = '';
