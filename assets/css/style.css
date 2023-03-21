@@ -35,3 +35,7 @@ h1{
 .dettagli th{
   padding: 0 10px;
 }
+
+#eta:hover :first-child{
+  display: none;
+}
