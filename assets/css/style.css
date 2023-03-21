@@ -4,11 +4,19 @@
   box-sizing: border-box;
 }
 
+h1{
+  padding: 20px 0; 
+}
+
 .container{
   margin: 0 auto;
   width: 70%;
   height: 100vh;
   text-align: center;
+}
+
+.calcola-prezzo button{
+  margin: 20px 10px;
 }
 
 .biglietto{
@@ -22,4 +30,8 @@
 .dettagli{
   display: flex;
   justify-content: center;
+}
+
+.dettagli th{
+  padding: 0 10px;
 }
