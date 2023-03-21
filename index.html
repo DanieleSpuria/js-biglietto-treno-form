@@ -9,18 +9,44 @@
 </head>
 <body>
   
-  <input type="text" id="km-da-percorrere" placeholder="Inserisci km da percorrere">
+  <div class="calcola-prezzo">
+    <input type="text" id="name" placeholder="Inserisci il tuo nome e il tuo cognome">
+    <input type="text" id="km-da-percorrere" placeholder="Inserisci km da percorrere">
 
-  <select id="eta">
-    <option value="default">Inserire età</option>
-    <option value="minorenne">Under 18</option>
-    <option value="maggiorenne">Maggiorenne</option>
-    <option value="over65">Over 65</option>
-  </select>
+    <select id="eta">
+      <option value="default">Inserire età</option>
+      <option value="under18">Under 18</option>
+      <option value="maggiorenne">Maggiorenne</option>
+      <option value="over65">Over 65</option>
+    </select>
 
-  <button> Genera </button>
+    <button> Genera </button>
+  </div>
+  
 
+  <div class="biglietto">
+    <h1>Il tuo biglietto</h1>
 
+    <div class="dettagli">
+      <table>
+        <thead>
+          <th>Nome Passeggero</th>
+          <th>Offerta</th>
+          <th>Carrozza</th>
+          <th>Codice Cp</th>
+          <th>Costo biglietto</th>
+        </thead>
+
+        <tbody>
+          <td id="passeggero"></td>
+          <td id="offerta"></td>
+          <td></td>
+          <td></td>
+          <td id="costo"></td>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
 <script src="assets/js/script.js"></script>
 
