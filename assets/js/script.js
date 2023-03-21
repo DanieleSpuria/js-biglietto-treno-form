@@ -25,6 +25,7 @@ genera.addEventListener('click', function() {
     console.log('totale',totale);
   }
 
+  document.getElementById('biglietto').classList.add('d-block');
   document.getElementById('passeggero').innerHTML = name;
   document.getElementById('costo').innerHTML = totale.toFixed(2) + '&euro;';
 });
