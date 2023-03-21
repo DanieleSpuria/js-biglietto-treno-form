@@ -1,8 +1,9 @@
 let name = document.getElementById('name').value;
 let km = document.getElementById('km-da-percorrere').value;
 let age = document.getElementById('eta').value;
-const genera = document.querySelector('button');
-console.log(km, age, genera);
+const genera = document.getElementById('bottone1');
+const reset = document.getElementById('bottone2');
+console.log(name, km, age, genera, reset);
 
 
 const prezzoKm = 0.21;
@@ -27,8 +28,17 @@ genera.addEventListener('click', function() {
 
   document.getElementById('biglietto').classList.add('d-block');
   document.getElementById('passeggero').innerHTML = name;
+  document.getElementById('carrozza').innerHTML = (Math.random() * 100).toFixed();
+  document.getElementById('cp').innerHTML = (Math.random() * 100000).toFixed();
   document.getElementById('costo').innerHTML = totale.toFixed(2) + '&euro;';
 });
+
+reset.addEventListener('click', function() {
+
+  name.innerHTML = '';
+  km.innerHTML = 0;
+  age.innerHTML = 'default';
+})
 
 
 
