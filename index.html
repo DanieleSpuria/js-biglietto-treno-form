@@ -9,46 +9,50 @@
 </head>
 <body>
   
-  <div class="calcola-prezzo">
-    <input type="text" id="name" placeholder="Inserisci il tuo nome e il tuo cognome">
-    <input type="text" id="km-da-percorrere" placeholder="Inserisci km da percorrere">
+  <div class="container">
+    <div class="calcola-prezzo">
+      <h1>Calcola il prezzo del tuo biglietto</h1>
 
-    <select id="eta">
-      <option value="default">Inserire età</option>
-      <option value="under18">Under 18</option>
-      <option value="maggiorenne">Maggiorenne</option>
-      <option value="over65">Over 65</option>
-    </select>
+      <input type="text" id="name" placeholder="Inserisci il tuo nome e il tuo cognome">
+      <input type="text" id="km-da-percorrere" placeholder="Inserisci km da percorrere">
 
-    <button> Genera </button>
-  </div>
-  
+      <select id="eta">
+        <option value="default">Inserire età</option>
+        <option value="under18">Under 18</option>
+        <option value="maggiorenne">Maggiorenne</option>
+        <option value="over65">Over 65</option>
+      </select>
 
-  <div id="biglietto" class="biglietto">
-    <h1>Il tuo biglietto</h1>
+      <button> Genera </button>
+    </div>
+    
 
-    <div class="dettagli">
-      <table>
-        <thead>
-          <th>Nome Passeggero</th>
-          <th>Offerta</th>
-          <th>Carrozza</th>
-          <th>Codice Cp</th>
-          <th>Costo biglietto</th>
-        </thead>
+    <div id="biglietto" class="biglietto">
+      <h1>Il tuo biglietto</h1>
 
-        <tbody>
-          <td id="passeggero"></td>
-          <td id="offerta"></td>
-          <td></td>
-          <td></td>
-          <td id="costo"></td>
-        </tbody>
-      </table>
+      <div class="dettagli">
+        <table>
+          <thead>
+            <th>Nome Passeggero</th>
+            <th>Offerta</th>
+            <th>Carrozza</th>
+            <th>Codice Cp</th>
+            <th>Costo biglietto</th>
+          </thead>
+
+          <tbody>
+            <td id="passeggero"></td>
+            <td id="offerta"></td>
+            <td></td>
+            <td></td>
+            <td id="costo"></td>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-
-<script src="assets/js/script.js"></script>
+  
+  <script src="assets/js/script.js"></script>
 
 </body>
 </html>
