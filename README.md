@@ -23,3 +23,14 @@ BONUS:
 Aggiungere un bottone “reset”
 Aggiungere random il numero della carrozza e il CP
 
+
+## Sviluppo 
+
+- creare input km da percorrere e agganciarlo ad una variabile
+- creare input età passeggero e agganciarlo ad una variabile
+- creare button genera prezzo e agganciarlo ad una variabile
+- inserire const con prezzo al km
+- inserire condizioni per lo sconto minorenni
+- inserire condizioni per lo sconto over 65
+- output con massimo due decimali
+
